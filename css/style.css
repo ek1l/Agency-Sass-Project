@@ -2,6 +2,12 @@
   text-shadow: 3px 2px #000;
 }
 
+.services-container h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .btn {
   padding: 0.6rem 1rem;
   border: 1px solid #fff;
@@ -10,17 +16,21 @@
   transition: 0.3s;
   color: #fff;
 }
+
 .btn:hover {
   border-color: #ff5200;
   color: #ff5200;
 }
+
 .btn-primary {
   background-color: #ff5200;
   border-color: #ff5200;
 }
+
 .btn-primary:hover {
   background-color: transparent;
 }
+
 .btn-rounded {
   margin-top: 1rem;
   border-radius: 2rem;
@@ -49,6 +59,7 @@ li {
   background-size: cover;
   background-position: center;
 }
+
 #main-banner .nav-container {
   display: flex;
   justify-content: space-between;
@@ -60,34 +71,42 @@ li {
   background-color: #000;
   z-index: 10;
 }
+
 #main-banner .nav-container .brand {
   color: #fff;
   font-size: 2rem;
   transition: 0.3s;
 }
+
 #main-banner .nav-container .brand:hover {
   color: #ff5200;
 }
+
 #main-banner .nav-container-navbar {
   display: flex;
   align-items: center;
   height: 100%;
 }
+
 #main-banner .nav-container-navbar li {
   margin: 5px 10px;
 }
+
 #main-banner .nav-container-navbar li a {
   color: #fff;
   transition: 0.3s;
 }
+
 #main-banner .nav-container-navbar li a:hover {
   color: #ff5200;
 }
+
 #main-banner .nav-container .fas.fa-bars {
   font-size: 2rem;
   color: #FFF;
   display: none;
 }
+
 #main-banner .title-container {
   color: #fff;
   display: flex;
@@ -96,12 +115,57 @@ li {
   justify-content: center;
   height: 100%;
 }
+
 #main-banner .title-container h2 {
   font-size: 3rem;
 }
+
 #main-banner .title-container h1 {
   font-size: 4rem;
   margin-top: 1rem;
+}
+
+.services-container {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services-container .services-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.services-container .services-card-container .services-card {
+  width: 30%;
+  margin: 1%;
+  padding: 2rem;
+  border: 1px solid #CCC;
+  transition: 0.3s;
+}
+
+.services-container .services-card-container .services-card i {
+  color: #ff5200;
+  font-size: 4rem;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.services-container .services-card-container .services-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-container .services-card-container .services-card p {
+  color: #8b8e94;
+}
+
+.services-container .services-card-container .services-card:hover {
+  border: transparent;
+  box-shadow: 0 1px 10px #CCC;
 }
 
 /*# sourceMappingURL=style.css.map */
