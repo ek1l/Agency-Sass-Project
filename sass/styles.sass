@@ -83,3 +83,67 @@
             &:hover
                 border: transparent
                 box-shadow: 0 1px 10px #CCC
+.jobs-container
+    background-color: $secondary-bg
+    padding: 48px
+    h2
+        @extend  %section-title
+
+    .jobs-list
+        display: flex
+        padding: 2rem 0
+        .first-job
+            width: 30%
+            height: 415px
+            background-image: url('../img/job1.jpg')
+            position: relative
+            background-repeat: no-repeat
+            cursor: pointer
+            transition: .5s
+            margin: 0 2%
+            @extend %center-bg
+            @extend %card-hover
+        .other-jobs-container
+            display: flex
+            flex-wrap: wrap
+            width: 60%
+            .job-card
+                width: 46%
+                height: 12.5rem
+                position: relative
+                cursor: pointer
+                margin-bottom: 15px
+                margin-right: 15px
+                @extend %center-bg
+                @extend %card-hover
+
+            #job2
+                background-image: url('../img/job2.jpeg')
+            #job3
+                background-image: url('../img/job3.jpg')
+            #job4
+                background-image: url('../img/job4.jpg')
+            #job5
+                background-image: url('../img/job5.jpg')
+        .job-card-cover
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            padding-top: 1.75rem
+            background-color: rgba(0, 0,0 ,.6 )
+            border: 3px solid $primary-color
+            transition: .5s
+        .job-card-title
+            text-align: center
+            color: #fff
+            font-size: 2.2rem
+            transition: .5s
+            font-weight: bold
+
+        .job-card-description
+            text-align: center
+            padding: 1rem
+            color: #FFF
+            font-size: .9rem

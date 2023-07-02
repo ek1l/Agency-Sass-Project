@@ -2,10 +2,22 @@
   text-shadow: 3px 2px #000;
 }
 
-.services-container h2 {
+.jobs-container h2, .services-container h2 {
   font-size: 3rem;
   margin-top: 2rem;
   text-align: center;
+}
+
+.jobs-container .jobs-list .other-jobs-container .job-card, .jobs-container .jobs-list .first-job {
+  background-size: cover;
+  background-position: center;
+}
+
+.jobs-container .jobs-list .other-jobs-container .job-card .job-card-title, .jobs-container .jobs-list .first-job .job-card-title, .jobs-container .jobs-list .other-jobs-container .job-card .job-card-cover, .jobs-container .jobs-list .first-job .job-card-cover, .jobs-container .jobs-list .other-jobs-container .job-card .job-card-description, .jobs-container .jobs-list .first-job .job-card-description {
+  opacity: 0;
+}
+.jobs-container .jobs-list .other-jobs-container .job-card:hover .job-card-title, .jobs-container .jobs-list .first-job:hover .job-card-title, .jobs-container .jobs-list .other-jobs-container .job-card:hover .job-card-cover, .jobs-container .jobs-list .first-job:hover .job-card-cover, .jobs-container .jobs-list .other-jobs-container .job-card:hover .job-card-description, .jobs-container .jobs-list .first-job:hover .job-card-description {
+  opacity: 1;
 }
 
 .btn {
@@ -16,21 +28,17 @@
   transition: 0.3s;
   color: #fff;
 }
-
 .btn:hover {
   border-color: #ff5200;
   color: #ff5200;
 }
-
 .btn-primary {
   background-color: #ff5200;
   border-color: #ff5200;
 }
-
 .btn-primary:hover {
   background-color: transparent;
 }
-
 .btn-rounded {
   margin-top: 1rem;
   border-radius: 2rem;
@@ -59,7 +67,6 @@ li {
   background-size: cover;
   background-position: center;
 }
-
 #main-banner .nav-container {
   display: flex;
   justify-content: space-between;
@@ -71,42 +78,34 @@ li {
   background-color: #000;
   z-index: 10;
 }
-
 #main-banner .nav-container .brand {
   color: #fff;
   font-size: 2rem;
   transition: 0.3s;
 }
-
 #main-banner .nav-container .brand:hover {
   color: #ff5200;
 }
-
 #main-banner .nav-container-navbar {
   display: flex;
   align-items: center;
   height: 100%;
 }
-
 #main-banner .nav-container-navbar li {
   margin: 5px 10px;
 }
-
 #main-banner .nav-container-navbar li a {
   color: #fff;
   transition: 0.3s;
 }
-
 #main-banner .nav-container-navbar li a:hover {
   color: #ff5200;
 }
-
 #main-banner .nav-container .fas.fa-bars {
   font-size: 2rem;
   color: #FFF;
   display: none;
 }
-
 #main-banner .title-container {
   color: #fff;
   display: flex;
@@ -115,11 +114,9 @@ li {
   justify-content: center;
   height: 100%;
 }
-
 #main-banner .title-container h2 {
   font-size: 3rem;
 }
-
 #main-banner .title-container h1 {
   font-size: 4rem;
   margin-top: 1rem;
@@ -130,14 +127,12 @@ li {
   padding: 2rem;
   margin-bottom: 2rem;
 }
-
 .services-container .services-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 2rem;
 }
-
 .services-container .services-card-container .services-card {
   width: 30%;
   margin: 1%;
@@ -145,7 +140,6 @@ li {
   border: 1px solid #CCC;
   transition: 0.3s;
 }
-
 .services-container .services-card-container .services-card i {
   color: #ff5200;
   font-size: 4rem;
@@ -153,19 +147,84 @@ li {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
-
 .services-container .services-card-container .services-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
 .services-container .services-card-container .services-card p {
   color: #8b8e94;
 }
-
 .services-container .services-card-container .services-card:hover {
   border: transparent;
   box-shadow: 0 1px 10px #CCC;
+}
+
+.jobs-container {
+  background-color: #e5eaff;
+  padding: 48px;
+}
+.jobs-container .jobs-list {
+  display: flex;
+  padding: 2rem 0;
+}
+.jobs-container .jobs-list .first-job {
+  width: 30%;
+  height: 415px;
+  background-image: url("../img/job1.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 0 2%;
+}
+.jobs-container .jobs-list .other-jobs-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+.jobs-container .jobs-list .other-jobs-container .job-card {
+  width: 46%;
+  height: 12.5rem;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.jobs-container .jobs-list .other-jobs-container #job2 {
+  background-image: url("../img/job2.jpeg");
+}
+.jobs-container .jobs-list .other-jobs-container #job3 {
+  background-image: url("../img/job3.jpg");
+}
+.jobs-container .jobs-list .other-jobs-container #job4 {
+  background-image: url("../img/job4.jpg");
+}
+.jobs-container .jobs-list .other-jobs-container #job5 {
+  background-image: url("../img/job5.jpg");
+}
+.jobs-container .jobs-list .job-card-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 1.75rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 3px solid #ff5200;
+  transition: 0.5s;
+}
+.jobs-container .jobs-list .job-card-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2.2rem;
+  transition: 0.5s;
+  font-weight: bold;
+}
+.jobs-container .jobs-list .job-card-description {
+  text-align: center;
+  padding: 1rem;
+  color: #FFF;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
